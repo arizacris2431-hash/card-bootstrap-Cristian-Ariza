@@ -1,0 +1,60 @@
+
+
+body {
+    background:#f1f5f9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    
+}
+
+
+.card {
+    background: linear-gradient(135deg, #0f172a, #334155);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+    box-shadow: 0 30px 45px rgba(0,0,0,0.3);
+    padding: 18px;
+}
+
+.card h4 {
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #f8fafc;
+}
+
+.card h5 {
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #38bdf8;
+}
+
+.card p{
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #cbd5f5;
+    line-height: 1.6;
+}
+
+
+.foto-perfil {
+    margin-top: 15px;
+    width: 170px;
+    transition: transform 0.3s ease;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.08);
+}
+
+.card-body a {
+    transition: 0.3s;
+}
