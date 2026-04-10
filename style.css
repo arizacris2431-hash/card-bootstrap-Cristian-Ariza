@@ -1,60 +1,102 @@
-
-
 body {
-    background:#f1f5f9;
+    background: #f1f5f9;
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     min-height: 100vh;
-    
+    margin: 0;
+    padding: 20px;
 }
 
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
 .card {
     background: linear-gradient(135deg, #0f172a, #334155);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
     color: #ccc;
     box-shadow: 0 30px 45px rgba(0,0,0,0.3);
-    padding: 18px;
+    padding: 0 24px 28px;
+    border-radius: 20px;
+    border: 1px solid rgba(56, 189, 248, 0.15);
+    width: 21rem;
+    overflow: visible; 
 }
 
-.card h4 {
-    padding: 10px;
-    font-size: 22px;
-    font-weight: 600;
-    color: #f8fafc;
+.foto {
+    margin-top: -55px;
+    padding: 4px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1d546b, #104b38);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
 }
-
-.card h5 {
-    padding: 8px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #38bdf8;
-}
-
-.card p{
-    padding: 8px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #cbd5f5;
-    line-height: 1.6;
-}
-
 
 .foto-perfil {
-    margin-top: 15px;
-    width: 170px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    border: 3px solid #0f172a;
     transition: transform 0.3s ease;
 }
 
 .foto-perfil:hover {
-    transform: scale(1.08);
+    transform: scale(1.07);
 }
 
-.card-body a {
-    transition: 0.3s;
+
+.card h4 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #f8fafc;
+    margin: 4px 0;
+}
+
+.card h5 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #38bdf8;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 13.5px;
+    color: #94a3b8;
+    line-height: 1.65;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.card-link {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #60a5fa;
+    text-decoration: none;
+    padding: 5px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(56, 130, 230, 0.3);
+    transition: all 0.2s ease;
+}
+
+.card-link:hover {
+    background: rgba(56, 130, 230, 0.2);
+    border-color: rgba(56, 130, 230, 0.6);
+    color: #93c5fd;
 }
